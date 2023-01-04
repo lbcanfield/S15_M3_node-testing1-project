@@ -56,7 +56,7 @@ class Counter {
       * @param {number} initialNumber - the initial state of the count
       */
      constructor(initialNumber) {
-          // ✨ initialize whatever properties are needed
+          this.count = initialNumber
      }
 
      /**
@@ -72,7 +72,10 @@ class Counter {
       * counter.countDown() // returns 0
       */
      countDown() {
-          // ✨ implement
+          if (this.count > 0) {
+               return this.count--
+          }
+          return 0
      }
 }
 
